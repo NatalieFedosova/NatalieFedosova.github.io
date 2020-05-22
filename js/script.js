@@ -1,17 +1,8 @@
-/**
- * @function      Include
- * @description   Includes an external scripts to the page
- * @param         {string} scriptUrl
- */
+
 function include(scriptUrl) {
     document.write('<script src="' + scriptUrl + '"></script>');
 }
 
-
-/**
- * @function      Include
- * @description   Lazy script initialization
- */
 function lazyInit(element, func) {
     var $win = jQuery(window),
         wh = $win.height();
@@ -29,11 +20,7 @@ function lazyInit(element, func) {
     });
 }
 
-/**
- * @function      isIE
- * @description   checks if browser is an IE
- * @returns       {number} IE Version
- */
+
 function isIE() {
     var myNav = navigator.userAgent.toLowerCase(),
         msie = (myNav.indexOf('msie') != -1) ? parseInt(myNav.split('msie')[1]) : false;
@@ -45,10 +32,7 @@ function isIE() {
     return msie;
 };
 
-/**
- * @module       IE Fall&Polyfill
- * @description  Adds some loosing functionality to old IE browsers
- */
+
 ;
 (function ($) {
     var ieVersion = isIE();
@@ -74,10 +58,6 @@ function isIE() {
 })(jQuery);
 
 
-/**
- * @module       Copyright
- * @description  Evaluates the copyright year
- */
 ;
 (function ($) {
     $(document).ready(function () {
@@ -86,10 +66,6 @@ function isIE() {
 })(jQuery);
 
 
-/**
- * @module       WOW Animation
- * @description  Enables scroll animation on the page
- */
 ;
 (function ($) {
     var o = $('html');
@@ -101,10 +77,6 @@ function isIE() {
 })(jQuery);
 
 
-/**
- * @module       ToTop
- * @description  Enables ToTop Plugin
- */
 ;
 (function ($) {
     var o = $('html');
@@ -120,10 +92,6 @@ function isIE() {
 })(jQuery);
 
 
-/**
- * @module       RD Mailform
- * @description  Enables RD Mailform Plugin
- */
 ;
 (function ($) {
     var o = $('.rd-mailform');
@@ -172,10 +140,7 @@ function isIE() {
     }
 })(jQuery);
 
-/**
- * @module       RD Google Map
- * @description  Enables RD Google Map Plugin
- */
+
 ;
 (function ($) {
     var o = $('#google-map');
@@ -252,10 +217,6 @@ function isIE() {
     }
 })(jQuery);
 
-/**
- * @module       RD Navbar
- * @description  Enables RD Navbar Plugin
- */
 ;
 (function ($) {
     var o = $('.rd-navbar');
@@ -289,10 +250,6 @@ function isIE() {
 })(jQuery);
 
 
-/**
- * @module       Swiper Slider
- * @description  Enables Swiper Plugin
- */
 var isIEBrows = navigator.appVersion.indexOf("MSIE") != -1 || navigator.appVersion.indexOf('Trident/') > 0;
 var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 ;
@@ -524,10 +481,7 @@ var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.
     }
 })(jQuery);
 
-/**
- * @module     Owl Carousel
- * @description Enables Owl Carousel Plugin
- */
+
 ;
 (function ($) {
     var o = $('.owl-carousel');

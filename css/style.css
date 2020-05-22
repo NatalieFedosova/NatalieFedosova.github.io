@@ -10094,8 +10094,7 @@ a.icon-primary:hover {
   line-height: 24px;
   color: #000;
   font-family: "Montserrat", sans-serif;
-  border: 2px solid #000;
-  font-weight: 400
+  border: 3px solid #000;
 }
 
 .rd-navbar-wrap {
@@ -10786,7 +10785,6 @@ a.icon-primary:hover {
 .rd-navbar-static {
   display: block;
   width: 100%;
-  padding-top: 5px;
   padding-bottom: 50px;
 }
 .rd-navbar-static .rd-navbar-panel, .rd-navbar-static .rd-navbar-nav-wrap {
@@ -13331,18 +13329,12 @@ button.swiper-pagination-bullet {
   min-height: 100vh;
 }
 
-/*
-* @section      Page Footer
-* @description  This section holds specific style redeclarations for some
-*               of common elements in page footer
-*/
+
 .page-footer {
-  padding-top: 50px;
   padding-bottom: 50px;
 }
 @media (min-width: 992px) {
   .page-footer {
-    padding-top: 120px;
     padding-bottom: 65px;
   }
 }
